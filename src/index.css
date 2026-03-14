@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+html {
+  /* always reserve scrollbar space so layout width is identical in light/dark */
+  scrollbar-gutter: stable;
+}
+
+:root,
+[data-theme='light'] {
+  --bg-main: #f1f5f9;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --surface-border: #e2e8f0;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-subtle: #eff6ff;
+  --accent-subtle-border: #bfdbfe;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --error-bg: #fef2f2;
+  --error-text: #991b1b;
+  --error-border: rgba(239, 68, 68, 0.3);
+}
+
+[data-theme='dark'] {
+  --bg-main: #0b1120;
+  --surface: #1a2236;
+  --surface-2: #131c2e;
+  --surface-border: #2d3f5c;
+  --accent: #4f8ef7;
+  --accent-hover: #3b7ef6;
+  --accent-subtle: rgba(79, 142, 247, 0.12);
+  --accent-subtle-border: rgba(79, 142, 247, 0.3);
+  --text-main: #e2e8f0;
+  --text-muted: #7a90b0;
+  --error-bg: rgba(239, 68, 68, 0.1);
+  --error-text: #fca5a5;
+  --error-border: rgba(239, 68, 68, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Sora', 'Space Grotesk', 'Segoe UI', sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+  overflow-x: clip;
+}
+
+#root {
+  min-height: 100vh;
+}
