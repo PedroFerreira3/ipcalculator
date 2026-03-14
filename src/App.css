@@ -1048,6 +1048,15 @@
 /* ── Mobile ──────────────────────────────────────────────── */
 
 @media (max-width: 700px) {
+  .ranges-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ranges-table {
+    min-width: 480px;
+  }
+
   .navbar-links {
     display: none;
   }

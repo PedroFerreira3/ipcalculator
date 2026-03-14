@@ -14,6 +14,7 @@ export default function PrivateRangesTable() {
     <Card className="panel-card">
       <CardBody className="card-body-padded">
         <p className="ranges-section-label">{t('ranges.title')}</p>
+        <div className="ranges-table-wrapper">
         <table aria-label={t('ranges.ariaLabel')} className="ranges-table">
           <thead>
             <tr>
@@ -34,6 +35,7 @@ export default function PrivateRangesTable() {
             ))}
           </tbody>
         </table>
+        </div>
       </CardBody>
     </Card>
   )
